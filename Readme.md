@@ -6,7 +6,7 @@
 
 
 module "gfakx-module" {  
-  source = "github.com/gfakx/eks-module"  
+  source = "github.com/gfakx/terraform-aws-eks-module.git"  
   region        = "Enter your preffered region "  
   vpc_cidr      = "10.0.0.0/16"  
   dns_hostnames = "true"  
