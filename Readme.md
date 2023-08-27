@@ -1,4 +1,9 @@
-# EKS TERRAFORM MODULE USAGE
+
+
+## MY AWESOME TERRAFORM MODULE TO PROVISION EKS CLUSTER WITH CUSTOM NETWORKING  ----->
+
+# Sample usage:
+
 
 module "gfakx-module" {  
   source = "github.com/gfakx/eks-module"  
@@ -10,8 +15,8 @@ module "gfakx-module" {
   pub_two_cidr  = "10.0.2.0/24"  
   priv_one_cidr = "10.0.3.0/24"  
   priv_two_cidr = "10.0.4.0/24"  
-  az_one = "us-east-1a"   
-  az_two = "us-east-1b"  
+  az_one = "Enter your first  az"   
+  az_two = "Enter your second az"  
   public_ip_launch = true  
   eks_version  = "1.26"  
   desired_size = 3  
